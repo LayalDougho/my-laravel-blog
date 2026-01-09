@@ -18,3 +18,5 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 
 EXPOSE 80
+
+RUN php artisan migrate --force
