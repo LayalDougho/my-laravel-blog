@@ -19,4 +19,11 @@ RUN composer install --no-dev --optimize-autoloader --no-interaction
 
 EXPOSE 80
 
-RUN php artisan migrate --force
+
+
+# نسخ ملف الـ entrypoint وإعطاؤه صلاحية التنفيذ
+COPY entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+# إخبار الحاوية أن تبدأ بتشغيل هذا الملف
+ENTRYPOINT ["entrypoint.sh"]
