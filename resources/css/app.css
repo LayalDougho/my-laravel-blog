@@ -1,0 +1,81 @@
+
+@import 'bootstrap/dist/css/bootstrap.css';
+
+body {
+    background-color: #f7f7f7; /* خلفية فاتحة للموقع بالكامل */
+    direction: rtl; /* ضمان أن يكون الاتجاه من اليمين لليسار */
+    text-align: right; /* محاذاة النص لليمين */
+    font-family: Tahoma, sans-serif; /* خط بسيط وواضح */
+}
+
+/* تنسيق شريط التنقل (الـ Navbar) */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.05rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+/* تنسيق قسم الترحيب في الصفحة الرئيسية (hero-section) */
+.hero-section {
+    padding: 40px !important;
+    background-color: #e9ecef !important; /* لون خلفية فاتح مميز */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+    margin-bottom: 30px !important;
+}
+
+.hero-section h1 {
+    color: #007bff; /* لون Bootstrap الأساسي للأهمية */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* تنسيق رسائل التنبيه (Alerts) */
+.alert-success {
+    border-right: 5px solid #28a745;
+    font-weight: 500;
+}
+.alert-danger {
+    border-right: 5px solid #dc3545;
+}
+
+/* تنسيق الجداول (الـ Tables) */
+.table {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden; /* لإخفاء الزوايا إذا كانت مستديرة */
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e2e6ea !important; /* لون تظليل فاتح عند المرور */
+}
+
+/* تنسيق الصورة المصغرة في الجدول */
+.table img {
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+/* تنسيق الأزرار الصغيرة في الجدول */
+.table td .btn-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+}
+
+/* تنسيق الصفحات الفردية */
+.post-details {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}

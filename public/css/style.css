@@ -1,0 +1,113 @@
+/* 1. التنسيقات العامة وإعادة الضبط (تعديل على الخط) */
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    /* استخدام خط أكثر حداثة (Google Fonts إذا كان متوفرًا، أو خطوط النظام) */
+    font-family: 'Droid Arabic Kufi', 'Tahoma', sans-serif; 
+}
+
+body {
+    background-color: #f8f9fa; /* لون خلفية أفتح وأكثر هدوءًا */
+    color: #343a40; /* لون خط داكن احترافي */
+    line-height: 1.7; /* زيادة التباعد بين السطور لراحة العين */
+    text-align: right; 
+}
+
+.content-area {
+    max-width: 1100px; /* تضييق العرض قليلاً للتركيز */
+    margin: 30px auto; /* زيادة الهامش العلوي والسفلي */
+    padding: 0 20px; /* إزالة الـ padding من الأعلى والأسفل */
+}
+
+/* 2. تنسيق شريط التنقل (إضافة تأثير التمرير) */
+.main-header {
+    background-color: #007bff;
+    color: white;
+    padding: 18px 40px; /* زيادة حجم الـ Header قليلاً */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف لشريط التنقل */
+}
+
+.main-header .logo {
+    font-size: 1.8em;
+    font-weight: 900; /* جعل اللوغو عريض جداً */
+}
+
+.main-header a {
+    color: white;
+    text-decoration: none; 
+    margin-right: 25px; 
+    font-weight: 500;
+    transition: color 0.3s ease; /* إضافة تأثير انتقال سلس عند التمرير */
+}
+
+/* تأثير التمرير (Hover Effect) */
+.main-header a:hover {
+    color: #ffc107; /* تغيير لون الرابط للذهبي عند التمرير */
+}
+
+/* 3. تنسيق قسم الـ Hero (الترحيبي) */
+.hero-section {
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e9ecef; /* خط فاصل خفيف */
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.1em;
+    color: #6c757d;
+}
+
+/* 4. تنسيق بطاقة المقال (تحسين الظل والتفاعل) */
+.article-card {
+    background-color: white;
+    border-radius: 12px; /* زيادة تدور الحواف */
+    padding: 30px; /* زيادة الـ padding */
+    margin-bottom: 30px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* ظل أنعم وأوضح */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* إضافة تأثير انتقال */
+    border-right: 5px solid #007bff; /* إضافة شريط أزرق جانبي لمزيد من الجاذبية */
+}
+
+/* تأثير التمرير على البطاقة */
+.article-card:hover {
+    transform: translateY(-5px); /* رفع البطاقة للأعلى قليلاً */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* زيادة قوة الظل عند التمرير */
+}
+
+/* 5. تنسيق زر "اقرأ المزيد" (تحسين التفاعل) */
+.read-more-btn {
+    display: inline-block;
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px; /* تكبير حجم الزر */
+    text-decoration: none;
+    border-radius: 25px; /* جعل الزر دائري (Pill Shape) */
+    margin-top: 20px;
+    transition: background-color 0.3s ease; /* إضافة انتقال سلس */
+    font-weight: bold;
+}
+
+.read-more-btn:hover {
+    background-color: #e68900; /* جعل اللون أغمق عند التمرير */
+}
+
+/* 6. تنسيق التذييل (Footer) */
+.main-footer {
+    background-color: #343a40; /* لون داكن أكثر رسمية */
+    color: #f8f9fa;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 60px;
+    font-size: 0.9em;
+}
